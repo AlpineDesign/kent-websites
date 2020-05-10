@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product Collection unit tests - View renders correctly 1`] = `
+<div
+  class="ms-product-collection"
+  data-m-t="mock-type"
+  id=""
+>
+  <div>
+    Trending now
+  </div>
+  <div
+    class="node-class-SingleSlideCarouselComponent"
+  />
+</div>
+`;

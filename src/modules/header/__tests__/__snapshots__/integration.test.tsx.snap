@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header integration tests renders correctly 1`] = `
+<header
+  class="ms-header"
+  data-m-t="mock-type"
+  id=""
+>
+  <div
+    class="ms-header__container"
+  >
+    <div
+      class="ms-header__topbar"
+    >
+      <button
+        aria-controls="header-nav-mobile"
+        aria-expanded="false"
+        aria-label="Mobile view hamburger aria label"
+        class="ms-header__nav-icon msc-btn"
+        title="Mobile view hamburger aria label"
+        type="button"
+      />
+      <div
+        class="ms-header__logo"
+      >
+        <a
+          aria-label="fabrikam"
+          href="https://ppe.fabrikam.com/fe"
+        >
+          <picture>
+            <source
+              data-srcset="https://img-prod-cms-mr-microsoft-com.akamaized.net/cms/api/fabrikam/imageFileData/MA1G3L?w=132&h=28&m=6"
+              media="(max-width:767px)"
+            />
+            <source
+              data-srcset="https://img-prod-cms-mr-microsoft-com.akamaized.net/cms/api/fabrikam/imageFileData/MA1G3L?w=160&h=48&m=6"
+              media="(min-width:768px) and (max-width:1599px)"
+            />
+            <img
+              class="lazyload"
+              data-src="https://img-prod-cms-mr-microsoft-com.akamaized.net/cms/api/fabrikam/imageFileData/MA1G3L"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+            />
+          </picture>
+        </a>
+      </div>
+      <div
+        class="ms-header__account-info"
+      >
+        <a
+          aria-label="Sign In"
+          class="ms-header__signin-button msc-btn"
+          href="/signin"
+          title="Sign In"
+        >
+          <span
+            aria-hidden="true"
+            class="ms-header__signin-button-text"
+          >
+            Sign In
+          </span>
+        </a>
+      </div>
+      <a
+        aria-label="My wishlist"
+        class="msc-wishlist-icon ms-header__wishlist-desktop msc-btn"
+        href="/wishlist"
+        title="My wishlist"
+      >
+        <span
+          class="msc-wishlist-icon__text"
+        >
+          My wishlist
+        </span>
+      </a>
+      <div
+        class="ms-header__divider"
+      />
+      <a
+        aria-label="Shopping bag, (0) items"
+        class="msc-cart-icon msc-btn"
+        href="/cart"
+        title="Shopping bag, (0) items"
+      >
+        <div
+          aria-hidden="true"
+          class="msc-cart-icon__count"
+        >
+          (0)
+        </div>
+      </a>
+    </div>
+  </div>
+</header>
+`;

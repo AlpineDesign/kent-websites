@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header view tests render correctly no sign in info 1`] = `
+<div
+  class="module-class-HeaderTag"
+  data-m-t="mock-type"
+  id=""
+>
+  <div
+    class="module-class-HeaderContainer"
+  >
+    <div
+      class="module-class-HeaderTopBar"
+    >
+      {NavIcon}{LogoComponent}{Search}{WishlistIconDesktop}
+      <div
+        class="module-class-Divider"
+      />
+      {CartIcon}
+    </div>
+    <div
+      class="module-class-MobileMenu"
+    >
+      <div
+        class="module-class-MobileMenuBody"
+      >
+        mobile-menu-header{NavigationMenu}
+        <div
+          class="module-class-MobileMenuLinks"
+        >
+          {WishlistIconMobile}
+        </div>
+      </div>
+    </div>
+    {NavigationMenu}
+  </div>
+</div>
+`;
+
+exports[`Header view tests render correctly no signed out 1`] = `
+<div
+  class="module-class-HeaderTag"
+  data-m-t="mock-type"
+  id=""
+>
+  <div
+    class="module-class-HeaderContainer"
+  >
+    <div
+      class="module-class-HeaderTopBar"
+    >
+      {NavIcon}{LogoComponent}{Search}
+      <div
+        class="module-class-AccountInfoDropdownParent"
+      >
+        {SignIn}
+      </div>
+      {WishlistIconDesktop}
+      <div
+        class="module-class-Divider"
+      />
+      {CartIcon}
+    </div>
+    <div
+      class="module-class-MobileMenu"
+    >
+      <div
+        class="module-class-MobileMenuBody"
+      >
+        mobile-menu-header{NavigationMenu}
+        <div
+          class="module-class-MobileMenuLinks"
+        >
+          {WishlistIconMobile}{SignIn}
+        </div>
+      </div>
+    </div>
+    {NavigationMenu}
+  </div>
+</div>
+`;
+
+exports[`Header view tests render correctly signed in 1`] = `
+<div
+  class="module-class-HeaderTag"
+  data-m-t="mock-type"
+  id=""
+>
+  <div
+    class="module-class-HeaderContainer"
+  >
+    <div
+      class="module-class-HeaderTopBar"
+    >
+      {NavIcon}{LogoComponent}{Search}
+      <div
+        class="module-class-AccountInfoDropdownParent"
+      >
+        {accountInfoDropdownButton}
+        <div
+          class="module-class-AccountInfoDropdownPopoverConent"
+        >
+          {accountLink1}{accountLink2}{accountLink3}{SignOut}
+        </div>
+      </div>
+      {WishlistIconDesktop}
+      <div
+        class="module-class-Divider"
+      />
+      {CartIcon}
+    </div>
+    <div
+      class="module-class-MobileMenu"
+    >
+      <div
+        class="module-class-MobileMenuBody"
+      >
+        mobile-menu-header{NavigationMenu}
+        <div
+          class="module-class-MobileMenuLinks"
+        >
+          {accountLink1}{accountLink2}{accountLink3}{WishlistIconMobile}{SignOut}
+        </div>
+      </div>
+    </div>
+    {NavigationMenu}
+  </div>
+</div>
+`;

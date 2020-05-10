@@ -1,0 +1,52 @@
+$msc-promo-code-discount-heading-margin-top: 20px;
+$msc-promo-code-discount-line-container-border: 1px solid black;
+$msc-promo-code-discount-line-container-margin-top: 4px;
+$msc-promo-code-discount-line-container-padding-bottom: 10px;
+$msc-promo-code-discount-line-remove-btn-padding: 0 12px;
+
+$msc-promo-code-input-border: 1px solid black;
+$msc-promo-code-input-outline: 1px dashed transparent;
+
+
+.msc-promo-code {
+    &__discount {
+        display: flex;
+        justify-content: space-between;
+        margin-top: $msc-promo-code-discount-heading-margin-top;
+
+        &-heading {
+            @include font-content-l()
+        }
+
+        &-value {
+            font-weight: bold;
+        }
+    }
+
+    &__line{
+        &-container {
+            @include font-content-m();
+            border-bottom: $msc-promo-code-discount-line-container-border;
+            margin-top: $msc-promo-code-discount-line-container-margin-top;
+            padding-bottom: $msc-promo-code-discount-line-container-padding-bottom;
+        }
+    
+        &-value {
+            display: inline-block;
+        }
+
+        &__btn-remove {
+            @include button-link();
+            @include font-content-m($msv-font-weight-normal);
+            height: auto;
+            padding: $msc-promo-code-discount-line-remove-btn-padding;
+        }
+
+    }
+    
+    &__input-box {
+        @include vfi();
+        border: $msc-promo-code-input-border;
+        outline: $msc-promo-code-input-outline;
+    }
+}

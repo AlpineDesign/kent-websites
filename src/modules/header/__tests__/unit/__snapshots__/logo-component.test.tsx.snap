@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo component unit tests render correctly with image and link 1`] = `
+<div
+  class="mock-class"
+>
+  <a
+    href="https://ppe.fabrikam.com/fe"
+  >
+    <picture>
+      <source
+        data-srcset="https://img-prod-cms-mr-microsoft-com.akamaized.net/cms/api/fabrikam/imageFileData/MA1G3L?w=132&h=28&m=6"
+        media="(max-width:767px)"
+      />
+      <source
+        data-srcset="https://img-prod-cms-mr-microsoft-com.akamaized.net/cms/api/fabrikam/imageFileData/MA1G3L?w=160&h=48&m=6"
+        media="(min-width:768px) and (max-width:1599px)"
+      />
+      <img
+        class="lazyload"
+        data-src="https://img-prod-cms-mr-microsoft-com.akamaized.net/cms/api/fabrikam/imageFileData/MA1G3L"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+      />
+    </picture>
+  </a>
+</div>
+`;
+
+exports[`Logo component unit tests render correctly with image and no link 1`] = `
+<div>
+  <picture>
+    <source
+      data-srcset="https://img-prod-cms-mr-microsoft-com.akamaized.net/cms/api/fabrikam/imageFileData/MA1G3L?w=132&h=28&m=6"
+      media="(max-width:767px)"
+    />
+    <source
+      data-srcset="https://img-prod-cms-mr-microsoft-com.akamaized.net/cms/api/fabrikam/imageFileData/MA1G3L?w=160&h=48&m=6"
+      media="(min-width:768px) and (max-width:1599px)"
+    />
+    <img
+      class="lazyload"
+      data-src="https://img-prod-cms-mr-microsoft-com.akamaized.net/cms/api/fabrikam/imageFileData/MA1G3L"
+      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+    />
+  </picture>
+</div>
+`;
+
+exports[`Logo component unit tests render correctly with image link, and class name 1`] = `
+<div
+  class=""
+>
+  <a
+    href="https://ppe.fabrikam.com/fe"
+  >
+    <picture>
+      <source
+        data-srcset="https://img-prod-cms-mr-microsoft-com.akamaized.net/cms/api/fabrikam/imageFileData/MA1G3L?w=132&h=28&m=6"
+        media="(max-width:767px)"
+      />
+      <source
+        data-srcset="https://img-prod-cms-mr-microsoft-com.akamaized.net/cms/api/fabrikam/imageFileData/MA1G3L?w=160&h=48&m=6"
+        media="(min-width:768px) and (max-width:1599px)"
+      />
+      <img
+        class="lazyload"
+        data-src="https://img-prod-cms-mr-microsoft-com.akamaized.net/cms/api/fabrikam/imageFileData/MA1G3L"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+      />
+    </picture>
+  </a>
+</div>
+`;
+
+exports[`Logo component unit tests render correctly without image settings 1`] = `
+<div>
+  <picture>
+    <source
+      data-srcset="https://img-prod-cms-mr-microsoft-com.akamaized.net/cms/api/fabrikam/imageFileData/MA1G3L?w=132&h=28&m=6"
+      media="(max-width:767px)"
+    />
+    <source
+      data-srcset="https://img-prod-cms-mr-microsoft-com.akamaized.net/cms/api/fabrikam/imageFileData/MA1G3L?w=160&h=48&m=6"
+      media="(min-width:768px) and (max-width:1599px)"
+    />
+    <img
+      class="lazyload"
+      data-src="https://img-prod-cms-mr-microsoft-com.akamaized.net/cms/api/fabrikam/imageFileData/MA1G3L"
+      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+    />
+  </picture>
+</div>
+`;

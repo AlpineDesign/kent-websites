@@ -1,0 +1,13 @@
+{
+    "$type": "definitionExtension",
+    "resources": {
+        "decrementButtonAriaLabel": {
+            "value": "Decrease the quantity by 1",
+            "comment": "Aria Label / tooltop for the quantity decrease button"
+        },
+        "incrementButtonAriaLabel": {
+            "value": "Increase quantity by 1",
+            "comment": "Aria Label / tooltop for the quantity increase button"
+        }
+    }
+}

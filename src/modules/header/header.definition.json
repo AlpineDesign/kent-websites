@@ -1,0 +1,95 @@
+{
+	"$type": "containerModule",
+	"friendlyName": "Header (COPY)",
+	"name": "header",
+	"description": " Header is shown on the top of the page and allows the user to browse products via navigation hierarchy. It also support links to specific pages in the site that author wants to promote.",
+	"categories": [
+		"Header"
+	],
+	"dataActions": {
+		"cart": {
+			"path": "@msdyn365-commerce/global-state/dist/lib/data-actions/cart-state-data-action",
+			"runOn": "server"
+		},
+		"accountInformation": {
+			"path": "@msdyn365-commerce-modules/retail-actions/dist/lib/get-customer"
+		}
+	},
+	"config": {
+		"logoImage": {
+			"friendlyName": "Logo image",
+			"description": "Logo image",
+			"type": "image",
+			"required": true
+		},
+		"logoLink": {
+			"friendlyName": "Logo link",
+			"description": "Logo link",
+			"$ref": "@msdyn365-commerce-modules/definitions/dist/src/ActionLink.json#/definitions/actionLink"
+		},
+		"myAccountLinks": {
+			"friendlyName": "My account links",
+			"description": "Link to the my account page",
+			"type": "array",
+			"items": {
+				"$ref": "@msdyn365-commerce-modules/definitions/dist/src/ActionLink.json#/definitions/actionLink"
+			}
+		},
+		"className": {
+			"friendlyName": "Custom CSS class name",
+			"description": "Provide a custom css class name defined in the theme pack to target the CSS for this module",
+			"type": "string",
+			"default": ""
+		}
+	},
+	"resources": {
+		"mobileHamburgerAriaLabel": {
+			"comment": "The aria label used for mobile view hamburger",
+			"value": "Expand to see list of items"
+		},
+		"wishlistTooltipText": {
+			"comment": "string to be shown for wishlist tooltip",
+			"value": "My Wishlist"
+		},
+		"cartLabel": {
+			"comment": "string to be shown for cart or shopping bag tooltip",
+			"value": "Shopping bag, {0} items"
+		},
+		"signInLinkText": {
+			"value": "Sign in",
+			"comment": "Sign-in Link text"
+		},
+		"signInLinkAriaText": {
+			"value": "Sign in",
+			"comment": "Sign-in Link aria text"
+		},
+		"signOutLinkText": {
+			"value": "Sign out",
+			"comment": "Sign-out in Link aria text"
+		},
+		"signOutLinkAriaText": {
+			"value": "Sign out",
+			"comment": "Sign-out in Link aria text"
+		}
+	},
+	"slots": {
+		"menuBar": {
+			"friendlyName": "Navigation menu",
+			"description": "Slot for Navigation menu in header handling",
+			"allowedTypes": [
+				"navigation-menu"
+			],
+			"min": 0,
+			"max": 1
+		},
+		"search": {
+			"friendlyName": "Search",
+			"description": "Slot for Search in header handling",
+			"max": 1,
+			"min": 0,
+			"allowedTypes": [
+				"search"
+			]
+		}
+	}
+}
